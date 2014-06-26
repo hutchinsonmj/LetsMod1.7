@@ -12,12 +12,15 @@ public class LetsModMod{
     public static LetsModMod instance;
 
     @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event){ }
+    public void preInit(FMLPreInitializationEvent event)
+    {}
 
     @Mod.EventHandler
-    public void init(FMLInitializationEvent event){}
+    public void init(FMLInitializationEvent event)
+    {}
 
     @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent event){}
+    public void postInit(FMLPostInitializationEvent event)
+    {}
 
 }
