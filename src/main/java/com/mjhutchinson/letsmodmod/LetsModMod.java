@@ -1,5 +1,6 @@
 package com.mjhutchinson.letsmodmod;
 
+import com.mjhutchinson.letsmodmod.configuration.ConfigurationHandler;
 import com.mjhutchinson.letsmodmod.proxy.IProxy;
 import com.mjhutchinson.letsmodmod.referance.Referance;
 import cpw.mods.fml.common.Mod;
@@ -18,15 +19,16 @@ public class LetsModMod{
     public static IProxy proxy;
 
     @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {}
+    public void preInit(FMLPreInitializationEvent event){
+
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+
+    }
 
     @Mod.EventHandler
-    public void init(FMLInitializationEvent event)
-    {}
+    public void init(FMLInitializationEvent event){}
 
     @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent event)
-    {}
+    public void postInit(FMLPostInitializationEvent event){}
 
 }

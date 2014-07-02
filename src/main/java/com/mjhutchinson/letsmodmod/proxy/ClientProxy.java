@@ -1,4 +1,4 @@
 package com.mjhutchinson.letsmodmod.proxy;
 
-public class ClientPrxoy extends CommonProxy{
+public class ClientProxy extends CommonProxy{
 }
